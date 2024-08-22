@@ -5,6 +5,7 @@ import '../../../../../common/widgets/texts/section_heading.dart';
 import '../../../../../generated/l10n.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../otp/otp_page.dart';
+import '../../signup/signup_page.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm
@@ -81,7 +82,7 @@ class TLoginForm extends StatelessWidget {
                           .of(context)
                           .notAMember),
                       TextButton(
-                        onPressed: () => Get.to(() => Container()),
+                        onPressed: () => Get.to(() => SignUpScreen()),
                         child: Text(
                             S
                                 .of(context)

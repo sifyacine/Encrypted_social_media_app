@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/appbar/appbar.dart';
+import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/login_signup/otp_form.dart';
-import '../../../../common/widgets/texts/section_heading.dart';
 
 class OtpScreen extends StatelessWidget {
   const OtpScreen({Key? key}) : super(key: key);
