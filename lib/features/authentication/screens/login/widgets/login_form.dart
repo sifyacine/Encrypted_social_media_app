@@ -4,7 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../../common/widgets/texts/section_heading.dart';
 import '../../../../../generated/l10n.dart';
 import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/constants/text_strings.dart';
+import '../../otp/otp_page.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm
@@ -47,9 +47,12 @@ class TLoginForm extends StatelessWidget {
               /// forget password
               TextButton(
                 onPressed: () {
-                  Get.to(() => Container());
+                  Get.to(() => OtpScreen());
                 },
-                child: const Text(TTexts.forgetPassword),
+                child: Text(
+                    S
+                    .of(context)
+                    .forgetPassword),
               ),
               const SizedBox(width: TSizes.spaceBtwSections),
 
@@ -61,8 +64,10 @@ class TLoginForm extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () => Get.to(() => Container()),
-                      child: const Text(
-                        TTexts.signIn,
+                      child: Text(
+                          S
+                              .of(context)
+                              .login
                       ),
                     ),
                   ),
