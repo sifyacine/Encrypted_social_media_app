@@ -1,5 +1,32 @@
 {
-  "globalTexts": {},
+
+  "loginTitle": "Welcome!",
+  "email": "protonmail address",
+  "password": "Password",
+  "forgetPassword": "Forget Password?",
+  "login": "Login",
+  "notAMember" : "Not a member?",
+  "registerNow" : "Register Now",
+  "name": "Name",
+  "exampleName" : "Lucas",
+  "signUp": "Sign up",
+  "signupTitle": "Create an account to get started",
+  "passwordField": "Create a password",
+  "protonmailField": "name@protonmail.com",
+  "confirmPasswordField": "Confirm password",
+  "createAccount": "Create Account",
+  "iAgreeTo": "I've read and agree with the",
+  "termsOfUse": "Terns and conditions",
+  "privacyPolicy": "Privacy Policy",
+  "and": "and the",
+  "confirmationCodeTitle": "Enter confirmation code",
+  "confirmationCodeSubTitle": "A 4 digit code is sent to",
+  "resend": "Resend",
+  "confirm": "Confirm",
+
+
+
+
     "onBoardingTitle1": "Choose your product",
     "onBoardingTitle2": "Select Payment Method",
     "onBoardingTitle3": "Deliver at your door step",
@@ -11,34 +38,15 @@
     "homeAppbarTitle": "Good day for shopping",
     "homeAppbarSubTitle": "Sif Yacine",
 
-    "loginTitle": "Welcome!",
-    "email": "protonmail address",
-    "password": "Password",
-    "forgetPassword": "Forget Password?",
-    "login": "Login",
-    "notAMember" : "Not a member?",
-    "registerNow" : "Register Now",
 
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "newPassword": "New Password",
-    "username": "Username",
-    "phoneNo": "Phone Number",
-    "rememberMe": "Remember Me",
 
-    "createAccount": "Create Account",
-    "orSignInWith": "or sign in with",
-    "orSignUpWith": "or sign up with",
-    "iAgreeTo": "I agree to",
-    "privacyPolicy": "Privacy Policy",
-    "ternsOfUse": "Terns of use",
+
     "verificationCode": "verificationCode",
     "resendEmail": "Resend Email",
     "resendEmailIn": "Resend email in",
-    "and": "and",
+
 
     "loginSubTitle": "Discover Limitless Choices and Unwatched Convenience",
-    "signupTitle": "Let's create your account",
     "forgetPasswordTitle": "Forget password",
     "forgetPasswordSubTitle": "Don't worry sometimes people can forget too, enter your email and we will so",
     "changeYourPasswordTitle": "Password Reset Email Sent",

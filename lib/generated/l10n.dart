@@ -86,6 +86,153 @@ class S {
       args: [],
     );
   }
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get exampleName {
+    return Intl.message(
+      'Lucas',
+      name: 'exampleName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get signUp {
+    return Intl.message(
+      'Sign up',
+      name: 'signUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get signupTitle {
+    return Intl.message(
+      'Create an account to get started',
+      name: 'signupTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get passwordField {
+    return Intl.message(
+      'Create a password',
+      name: 'passwordField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get protonmailField {
+    return Intl.message(
+      'name@protonmail.com',
+      name: 'protonmailField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get confirmPasswordField {
+    return Intl.message(
+      'Confirm password',
+      name: 'confirmPasswordField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get createAccount {
+    return Intl.message(
+      'Create Account',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get iAgreeTo {
+    return Intl.message(
+      "I've read and agree with the",
+      name: 'iAgreeTo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get termsOfUse {
+    return Intl.message(
+      'Terns and conditions',
+      name: 'termsOfUse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get privacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get and {
+    return Intl.message(
+      'and the',
+      name: 'and',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get confirmPassword {
+    return Intl.message(
+      'confirm password',
+      name: 'confirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
+  String get confirm {
+    return Intl.message(
+      'Confirm',
+      name: 'confirm',
+      desc: '',
+      args: [],
+    );
+  }String get resend {
+    return Intl.message(
+      'Resend',
+      name: 'resend',
+      desc: '',
+      args: [],
+    );
+  }String get confirmationCodeSubTitle {
+    return Intl.message(
+      'A 4 digit code is sent to',
+      name: 'confirmationCodeSubTitle',
+      desc: '',
+      args: [],
+    );
+  }String get confirmationCodeTitle {
+    return Intl.message(
+      'Enter confirmation code',
+      name: 'confirmationCodeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+
 
   static Future<S> load(Locale locale) {
     final name = (locale.countryCode?.isEmpty ?? false)

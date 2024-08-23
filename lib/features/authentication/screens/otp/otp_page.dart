@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/login_signup/otp_form.dart';
+import '../../../../generated/l10n.dart';
 
 class OtpScreen extends StatelessWidget {
-  const OtpScreen({Key? key}) : super(key: key);
+  const OtpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppBar(
+      appBar: const TAppBar(
           showBackArrow: true,
       ),
       body: Padding(
@@ -17,31 +18,31 @@ class OtpScreen extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              "Enter confirmation code",
+              S.of(context).confirmationCodeTitle,
               style: Theme.of(context).textTheme.headlineMedium!,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
-            Text("A 4 digits code is sent to"),
-            Text("lucasscott3@gmail.com"),
-            SizedBox(height: 32.0),
-            OtpFrom(),
-            Spacer(),
+            Text(S.of(context).confirmationCodeSubTitle),
+            const Text("lucasscott3@gmail.com"),
+            const SizedBox(height: 32.0),
+            const OtpFrom(),
+            const Spacer(),
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton(
-                  child: Text("Resend"),
+                  child: Text(S.of(context).resend),
                   onPressed: () {},
                 ),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Text("Confirm"),
+                    child: Text(S.of(context).confirm),
                   ),
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
               ],
             ),
           ],

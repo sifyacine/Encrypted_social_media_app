@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../generated/l10n.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -26,11 +27,11 @@ class TermsAndConditions extends StatelessWidget {
             TextSpan(
               children: [
                 TextSpan(
-                  text: '${TTexts.iAgreeTo} ',
+                  text: S.of(context).iAgreeTo,
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 TextSpan(
-                  text: '${TTexts.privacyPolicy} ',
+                  text: S.of(context).privacyPolicy,
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
                     color: isDark ? TColors.white : TColors.primaryColor,
                     decoration: TextDecoration.underline,
@@ -38,11 +39,11 @@ class TermsAndConditions extends StatelessWidget {
                   ),
                 ),
                 TextSpan(
-                  text: '${TTexts.and} ',
+                  text: S.of(context).and,
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 TextSpan(
-                  text: '${TTexts.ternsOfUse} ',
+                  text: S.of(context).termsOfUse,
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
                     color: isDark ? TColors.white : TColors.primaryColor,
                     decoration: TextDecoration.underline,

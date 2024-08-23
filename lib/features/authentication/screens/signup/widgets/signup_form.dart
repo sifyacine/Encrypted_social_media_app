@@ -2,9 +2,8 @@ import 'package:encrypted_social_media_app/features/authentication/screens/signu
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../../../common/widgets/texts/section_heading.dart';
+import '../../../../../generated/l10n.dart';
 import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/constants/text_strings.dart';
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
@@ -17,49 +16,49 @@ class SignUpForm extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          /// First and last name
+          /// name
           Text(
-            "Name",
+            S.of(context).name,
             style: Theme.of(context).textTheme.headlineSmall,
             overflow: TextOverflow.ellipsis,
           ),
-          SizedBox(height: 6.0),
+          const SizedBox(height: 6.0),
           TextFormField(
-            decoration: const InputDecoration(
-              labelText: TTexts.firstName,
-              prefixIcon: Icon(Iconsax.user),
+            decoration: InputDecoration(
+              labelText: S.of(context).exampleName,
+              prefixIcon: const Icon(Iconsax.user),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           Text(
-            "Protonmail",
+            S.of(context).email,
             style: Theme.of(context).textTheme.headlineSmall,
             overflow: TextOverflow.ellipsis,
           ),
-          SizedBox(height: 6.0),
+          const SizedBox(height: 6.0),
           /// Email
           TextFormField(
-            decoration: const InputDecoration(
-              labelText: TTexts.email,
-              prefixIcon: Icon(Iconsax.direct),
+            decoration: InputDecoration(
+              labelText: S.of(context).protonmailField,
+              prefixIcon: const Icon(Iconsax.direct),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           Text(
-            "Password",
+            S.of(context).password,
             style: Theme.of(context).textTheme.headlineSmall,
             overflow: TextOverflow.ellipsis,
           ),
-          SizedBox(height: 6.0),
+          const SizedBox(height: 6.0),
           /// Password
           TextFormField(
             obscureText: true,
-            decoration: const InputDecoration(
-              labelText: "Password",
-              prefixIcon: Icon(Iconsax.password_check),
-              suffixIcon: Icon(Iconsax.eye_slash),
+            decoration: InputDecoration(
+              labelText: S.of(context).password,
+              prefixIcon: const Icon(Iconsax.password_check),
+              suffixIcon: const Icon(Iconsax.eye_slash),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
@@ -67,10 +66,10 @@ class SignUpForm extends StatelessWidget {
           /// Confirm password
           TextFormField(
             obscureText: true,
-            decoration: const InputDecoration(
-              labelText: "Confirm Password",
-              prefixIcon: Icon(Iconsax.password_check),
-              suffixIcon: Icon(Iconsax.eye_slash),
+            decoration: InputDecoration(
+              labelText: S.of(context).confirmPasswordField,
+              prefixIcon: const Icon(Iconsax.password_check),
+              suffixIcon: const Icon(Iconsax.eye_slash),
             ),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
@@ -86,7 +85,7 @@ class SignUpForm extends StatelessWidget {
               onPressed: () {
                 Get.to(() => Container());
               },
-              child: const Text(TTexts.signupTitle),
+              child: Text(S.of(context).createAccount),
             ),
           ),
         ],
