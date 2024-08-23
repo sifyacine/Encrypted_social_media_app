@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../../common/widgets/texts/section_heading.dart';
 import '../../../../../generated/l10n.dart';
+import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../otp/otp_page.dart';
 import '../../signup/signup_page.dart';
@@ -64,7 +65,7 @@ class TLoginForm extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () => Get.to(() => Container()),
+                      onPressed: () => Get.to(() => NavigationMenu()),
                       child: Text(
                           S
                               .of(context)
