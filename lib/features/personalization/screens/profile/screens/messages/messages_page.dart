@@ -1,5 +1,8 @@
 import 'package:encrypted_social_media_app/features/personalization/screens/profile/screens/messages/widgets/messages.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'chat_page.dart';
 
 class MessageScreen extends StatelessWidget {
   const MessageScreen({Key? key}) : super(key: key);
@@ -64,14 +67,19 @@ class MessageScreen extends StatelessWidget {
         itemCount: messages.length,
         itemBuilder: (context, index) {
           final message = messages[index];
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: MessagesCard(
-              image: message['image'] as String,
-              name: message['name'] as String,
-              oldMessage: message['oldMessage'] as String,
-              seen: message['seen'] as bool,
-              date: message['date'] as String,
+          return GestureDetector(
+            onTap: (){
+              Get.to(() => const ChatScreen());
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MessagesCard(
+                image: message['image'] as String,
+                name: message['name'] as String,
+                oldMessage: message['oldMessage'] as String,
+                seen: message['seen'] as bool,
+                date: message['date'] as String,
+              ),
             ),
           );
         },
