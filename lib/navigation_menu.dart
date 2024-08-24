@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/personalization/screens/profile/screens/profile_page.dart';
+
 
 
 class NavigationMenu extends StatelessWidget {
@@ -23,10 +25,11 @@ class NavigationMenu extends StatelessWidget {
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index) => controller.selectedIndex.value = index,
           destinations: const [
-            NavigationDestination(icon: Icon(Iconsax.home), label: 'home'),
-            NavigationDestination(icon: Icon(Iconsax.message), label: "chat"),
-            NavigationDestination(icon: Icon(Iconsax.notification), label: 'notifications'),
-            NavigationDestination(icon: Icon(Iconsax.setting), label: 'settings'),
+            NavigationDestination(icon: Icon(Iconsax.firstline), label: ''),
+            NavigationDestination(icon: Icon(Iconsax.book_1), label: ''),
+            NavigationDestination(icon: Icon(Iconsax.flash_circle5, size: 56.0), label: ''),
+            NavigationDestination(icon: Icon(Iconsax.notification), label: ''),
+            NavigationDestination(icon: Icon(Iconsax.user), label: ''),
           ],
         ),
       ),
@@ -38,7 +41,7 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [Container(), Container(), Container(), Container()];
+  final screens = [Container(), Container(), Container(), Container(), const ProfileScreen()];
 
 }
 

@@ -25,6 +25,11 @@
   "confirm": "Confirm",
 
 
+  "tabFriends" : "Friends",
+  "tabEditProfile" : "Edit profile",
+  "tabMessages" : "Messages",
+
+
 
 
     "onBoardingTitle1": "Choose your product",
@@ -32,7 +37,7 @@
     "onBoardingTitle3": "Deliver at your door step",
     "onBoardingSubTitle1": "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!",
     "onBoardingSubTitle2": "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!",
-    "onBoardingSubTitle3": "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!"
+    "onBoardingSubTitle3": "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!",
 
 
     "homeAppbarTitle": "Good day for shopping",
