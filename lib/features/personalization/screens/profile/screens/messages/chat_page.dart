@@ -1,3 +1,4 @@
+import 'package:encrypted_social_media_app/features/personalization/screens/profile/screens/messages/shared_images_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
@@ -89,7 +90,7 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
         title: InkWell(
           onTap: () {
-            Get.to(() => ChatSettingsPage());
+            Get.to(() => SharedImagesPage());
           },
           child: Row(
             children: [
