@@ -4,6 +4,7 @@ import 'package:encrypted_social_media_app/features/personalization/screens/prof
 import 'package:flutter/material.dart';
 
 import '../../../../../../common/widgets/texts/section_heading.dart';
+import '../../../../../../generated/l10n.dart';
 
 class EditProfileScreen extends StatelessWidget {
   const EditProfileScreen({Key? key}) : super(key: key);
@@ -11,23 +12,23 @@ class EditProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: const Padding(
-        padding: EdgeInsets.all(12.0),
+      child:  Padding(
+        padding: const EdgeInsets.all(12.0),
         child: Column(
           children: [
-            EditProfileHeader(),
-            SizedBox(height: 12.0),
-            TSectionHeading(title: 'Other additions',),
-            Padding(
+            const EditProfileHeader(),
+            const SizedBox(height: 12.0),
+            TSectionHeading(title: S.of(context).otherAdditions,),
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 14.0),
               child: OtherAdditions(),
             ),
-            TSectionHeading(title: 'Current situation',),
-            Padding(
+            TSectionHeading(title: S.of(context).CurrentSituation,),
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 14.0),
               child: CurrentSituation(),
             ),
-            TSectionHeading(title: 'More',),
+            TSectionHeading(title: S.of(context).more,),
           ],
         ),
       ),

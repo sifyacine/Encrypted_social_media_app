@@ -2,6 +2,7 @@ import 'package:encrypted_social_media_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
+import '../../../../../../../generated/l10n.dart';
 import '../../../../../../../utils/constants/colors.dart';
 
 class CurrentSituation extends StatelessWidget {
@@ -14,7 +15,7 @@ class CurrentSituation extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Space the containers evenly
       children: [
         TRoundedContainer(
-          padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 5.0 ),
+          padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 5.0 ),
           backgroundColor: isDark ? TColors.dark : TColors.light,
           height: 220,
           width: 170, // Added width to keep it consistent
@@ -33,30 +34,30 @@ class CurrentSituation extends StatelessWidget {
                     width: 50,
                   ),
                   Text(
-                    "Free mode",
+                    S.of(context).freeMode,
                     style: TextStyle(color: isDark ? TColors.white : TColors.kBlack),
                   ),
                 ],
               ),
               const SizedBox(height: 8),
-              const Text('Regular features', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+              Text(S.of(context).regularFeatures, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
               const SizedBox(height: 8),
-              const Text('Encrypted all data', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+              Text(S.of(context).encryptedAllData, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
               const SizedBox(height: 8),
-              const Text('Free', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+              Text(S.of(context).free, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
               const SizedBox(height: 8),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text("ON"),
+                  child: Text(S.of(context).freeButton),
                 ),
               ),
             ],
           ),
         ),
         TRoundedContainer(
-          padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 5.0 ),
+          padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 5.0 ),
 
           backgroundColor: isDark ? TColors.dark : TColors.light,
           height: 220,
@@ -76,23 +77,23 @@ class CurrentSituation extends StatelessWidget {
                     width: 50,
                   ),
                   Text(
-                    "VIP mode",
+                    S.of(context).vipMode,
                     style: TextStyle(color: isDark ? TColors.white : TColors.kBlack),
                   ),
                 ],
               ),
               const SizedBox(height: 8),
-              Text('More features', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+              Text(S.of(context).moreFeatures, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
               const SizedBox(height: 8),
-              const Text('Fast response', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+              Text(S.of(context).fastResponse, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
               const SizedBox(height: 8),
-              const Text('Starting at 30', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+              Text(S.of(context).vipPrice, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
               const SizedBox(height: 8),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text("Get it now"),
+                  child: Text(S.of(context).vipButton),
                 ),
               ),
             ],

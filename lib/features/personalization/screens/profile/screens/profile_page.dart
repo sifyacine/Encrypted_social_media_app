@@ -1,10 +1,14 @@
 import 'package:encrypted_social_media_app/features/personalization/screens/profile/screens/widgets/profile_header.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widgets/appbar/appbar.dart';
+import '../../../../../generated/l10n.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
+import '../../settings/settings_page.dart';
 import 'edit_profile/edit_profile.dart';
 import 'friends/friends_page.dart';
 import 'messages/messages_page.dart';
@@ -18,7 +22,9 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: TAppBar(actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.to(() => const SettingsScreen());
+          },
           icon: const Icon(Iconsax.setting),
         ),
       ]),
@@ -40,10 +46,10 @@ class ProfileScreen extends StatelessWidget {
                         labelColor: TColors.primaryColor,
                         unselectedLabelColor:
                             isDark ? Colors.white : Colors.black,
-                        tabs: const [
-                          Tab(text: 'friends'),
-                          Tab(text: 'edit profile'),
-                          Tab(text: 'messages'),
+                        tabs: [
+                          Tab(text: S.of(context).tabFriends),
+                          Tab(text: S.of(context).tabEditProfile),
+                          Tab(text: S.of(context).tabMessages),
                         ],
                       ),
                     ),

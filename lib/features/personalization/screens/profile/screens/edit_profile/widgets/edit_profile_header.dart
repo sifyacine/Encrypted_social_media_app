@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../../../generated/l10n.dart';
+
 class EditProfileHeader extends StatelessWidget {
   const EditProfileHeader({Key? key}) : super(key: key);
 
@@ -10,7 +12,7 @@ class EditProfileHeader extends StatelessWidget {
       children: [
         _buildContainer(
           context: context,
-          text: 'Edit Username',
+          text: S.of(context).editUsername,
           borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(16),
             bottomLeft: Radius.circular(16),
@@ -22,7 +24,7 @@ class EditProfileHeader extends StatelessWidget {
         SizedBox(width: 8),
         _buildContainer(
           context: context,
-          text: 'Profile Picture',
+          text: S.of(context).profilePicture,
           borderRadius: BorderRadius.zero,
           onTap: () {
             // Handle profile picture tap
@@ -31,7 +33,7 @@ class EditProfileHeader extends StatelessWidget {
         SizedBox(width: 8),
         _buildContainer(
           context: context,
-          text: 'Edit Password',
+          text: S.of(context).editPassword,
           borderRadius: const BorderRadius.only(
             topRight: Radius.circular(16),
             bottomRight: Radius.circular(16),

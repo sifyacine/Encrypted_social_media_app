@@ -29,39 +29,33 @@
   "tabEditProfile" : "Edit profile",
   "tabMessages" : "Messages",
 
+  "search" : "Search in your friends list",
+  "searchBar" : "Search @userName",
+  "noFriends" : "You have no fiends",
 
+  "editUsername" : "Edit username",
+  "profilePicture" : "profile picture",
+  "editPassword" : "Edit password",
 
+  "otherAdditions" : "Other additions",
+  "CurrentSituation" : "Current situation",
+  "more" : "More",
 
-    "onBoardingTitle1": "Choose your product",
-    "onBoardingTitle2": "Select Payment Method",
-    "onBoardingTitle3": "Deliver at your door step",
-    "onBoardingSubTitle1": "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!",
-    "onBoardingSubTitle2": "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!",
-    "onBoardingSubTitle3": "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!",
+  "ipCheck" : "check your IP address",
+  "twoFA" : "Two factor authentication",
+  "autoDeleteMsgs" : "Auto delete messages",
 
+  "freeMode" : "Free mode",
+  "vipMode" : "VIP mode",
 
-    "homeAppbarTitle": "Good day for shopping",
-    "homeAppbarSubTitle": "Sif Yacine",
+  "regularFeatures" : "Regular features",
+  "encryptedAllData" : "Encrypted all data",
+  "free" : "Free",
 
+  "moreFeatures" : "More features",
+  "fastResponse" : "Fast Response",
+  "vipPrice" : "Starting at 30$",
 
-
-
-    "verificationCode": "verificationCode",
-    "resendEmail": "Resend Email",
-    "resendEmailIn": "Resend email in",
-
-
-    "loginSubTitle": "Discover Limitless Choices and Unwatched Convenience",
-    "forgetPasswordTitle": "Forget password",
-    "forgetPasswordSubTitle": "Don't worry sometimes people can forget too, enter your email and we will so",
-    "changeYourPasswordTitle": "Password Reset Email Sent",
-    "changeYourPasswordSubTitle": "Your Account Security is Our Priority! We've Sent You a Secure Link to your email",
-    "confirmEmail": "Verify your email address!",
-    "confirmEmailSubTitle": "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and enjoy!!",
-    "emailNotReceivedMessage": "Didn't get the email? Check your junk/spam or resend it.",
-    "yourAccountCreatedTitle": "Your account successfully created!",
-    "yourAccountCreatedSudTitle": "Welcome to Your Ultimate Shopping Destination: Your Account is Created,",
-    "tContinue": "continue",
-    "tSubmit": "Submit",
-    "tDone": "Done"
+  "vipButton" : "Get it now",
+  "freeButton" : "ON"
 }

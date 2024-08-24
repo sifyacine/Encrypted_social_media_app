@@ -2,6 +2,7 @@ import 'package:encrypted_social_media_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
+import '../../../../../../../generated/l10n.dart';
 import '../../../../../../../utils/constants/colors.dart';
 
 class OtherAdditions extends StatelessWidget {
@@ -28,9 +29,9 @@ class OtherAdditions extends StatelessWidget {
             children: [
               Icon(Icons.check_circle, size: 50, color: isDark? TColors.white : TColors.kBlack), // Increased icon size
               const SizedBox(height: 8), // Space between icon and text
-              const Text(
-                'IP Check',
-                style: TextStyle(fontSize: 14), // Reduced text size
+              Text(
+                S.of(context).ipCheck,
+                style: const TextStyle(fontSize: 14), // Reduced text size
                 textAlign: TextAlign.center, // Center text alignment
                 maxLines: 2, // Allow up to 2 lines for text
                 overflow: TextOverflow.ellipsis, // Handle overflow with ellipsis
@@ -57,9 +58,9 @@ class OtherAdditions extends StatelessWidget {
             children: [
               Icon(Icons.person, size: 50, color: isDark? TColors.white : TColors.kBlack),
               const SizedBox(height: 8),
-              const Text(
-                'Two Factor Authentication',
-                style: TextStyle(fontSize: 14),
+              Text(
+                S.of(context).twoFA,
+                style: const TextStyle(fontSize: 14),
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -85,9 +86,9 @@ class OtherAdditions extends StatelessWidget {
             children: [
               Icon(Icons.delete_forever, size: 50, color: isDark? TColors.white : TColors.kBlack),
               const SizedBox(height: 8),
-              const Text(
-                'Auto Delete Messages',
-                style: TextStyle(fontSize: 14),
+              Text(
+                S.of(context).autoDeleteMsgs,
+                style: const TextStyle(fontSize: 14),
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,

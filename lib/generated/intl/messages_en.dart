@@ -21,5 +21,70 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "CurrentSituation":
+            MessageLookupByLibrary.simpleMessage("Current situation"),
+        "and": MessageLookupByLibrary.simpleMessage("and the"),
+        "autoDeleteMsgs":
+            MessageLookupByLibrary.simpleMessage("Auto delete messages"),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "confirmPasswordField":
+            MessageLookupByLibrary.simpleMessage("Confirm password"),
+        "confirmationCodeSubTitle":
+            MessageLookupByLibrary.simpleMessage("A 4 digit code is sent to"),
+        "confirmationCodeTitle":
+            MessageLookupByLibrary.simpleMessage("Enter confirmation code"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+        "editPassword": MessageLookupByLibrary.simpleMessage("Edit password"),
+        "editUsername": MessageLookupByLibrary.simpleMessage("Edit username"),
+        "email": MessageLookupByLibrary.simpleMessage("protonmail address"),
+        "encryptedAllData":
+            MessageLookupByLibrary.simpleMessage("Encrypted all data"),
+        "exampleName": MessageLookupByLibrary.simpleMessage("Lucas"),
+        "fastResponse": MessageLookupByLibrary.simpleMessage("Fast Response"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("Forget Password?"),
+        "free": MessageLookupByLibrary.simpleMessage("Free"),
+        "freeButton": MessageLookupByLibrary.simpleMessage("ON"),
+        "freeMode": MessageLookupByLibrary.simpleMessage("Messages"),
+        "iAgreeTo": MessageLookupByLibrary.simpleMessage(
+            "I\'ve read and agree with the"),
+        "ipCheck":
+            MessageLookupByLibrary.simpleMessage("check your IP address"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginTitle": MessageLookupByLibrary.simpleMessage("Welcome!"),
+        "more": MessageLookupByLibrary.simpleMessage("More"),
+        "moreFeatures": MessageLookupByLibrary.simpleMessage("More features"),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "noFriends": MessageLookupByLibrary.simpleMessage("You have no fiends"),
+        "notAMember": MessageLookupByLibrary.simpleMessage("Not a member?"),
+        "otherAdditions":
+            MessageLookupByLibrary.simpleMessage("Other additions"),
+        "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "passwordField":
+            MessageLookupByLibrary.simpleMessage("Create a password"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "profilePicture":
+            MessageLookupByLibrary.simpleMessage("profile picture"),
+        "protonmailField":
+            MessageLookupByLibrary.simpleMessage("name@protonmail.com"),
+        "registerNow": MessageLookupByLibrary.simpleMessage("Register Now"),
+        "regularFeatures":
+            MessageLookupByLibrary.simpleMessage("Regular features"),
+        "resend": MessageLookupByLibrary.simpleMessage("Resend"),
+        "search":
+            MessageLookupByLibrary.simpleMessage("Search in your friends list"),
+        "searchBar": MessageLookupByLibrary.simpleMessage("Search @userName"),
+        "signUp": MessageLookupByLibrary.simpleMessage("Sign up"),
+        "signupTitle": MessageLookupByLibrary.simpleMessage(
+            "Create an account to get started"),
+        "tabEditProfile": MessageLookupByLibrary.simpleMessage("Edit profile"),
+        "tabFriends": MessageLookupByLibrary.simpleMessage("Friends"),
+        "tabMessages": MessageLookupByLibrary.simpleMessage("Messages"),
+        "termsOfUse":
+            MessageLookupByLibrary.simpleMessage("Terns and conditions"),
+        "vipButton": MessageLookupByLibrary.simpleMessage("Get it now"),
+        "vipMode": MessageLookupByLibrary.simpleMessage("Messages"),
+        "vipPrice": MessageLookupByLibrary.simpleMessage("Starting at 30\$")
+      };
 }
