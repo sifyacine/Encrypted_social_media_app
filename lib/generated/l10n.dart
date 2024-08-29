@@ -410,11 +410,10 @@ class S {
     );
   }
 
-  // skipped getter for the '2FA' key
-  String get twoFA {
+  String get twoFactor {
     return Intl.message(
-      'two factor authentication',
-      name: 'twoFA',
+      'Two factor authentication',
+      name: 'twoFactor',
       desc: '',
       args: [],
     );
@@ -490,6 +489,7 @@ class S {
     );
   }
 
+
   /// `Fast Response`
   String get fastResponse {
     return Intl.message(
@@ -525,6 +525,165 @@ class S {
     return Intl.message(
       'ON',
       name: 'freeButton',
+      desc: '',
+      args: [],
+    );
+  }
+  /// `Notification`
+  String get notification {
+    return Intl.message(
+      'Notification',
+      name: 'notification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Friend Request`
+  String get friendRequest {
+    return Intl.message(
+      'Friend Request',
+      name: 'FriendRequest',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Read`
+  String get read {
+    return Intl.message(
+      'Read',
+      name: 'read',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New`
+  String get newNotification {
+    return Intl.message(
+      'New',
+      name: 'newNotification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message(
+      'Delete',
+      name: 'delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `View All`
+  String get viewAll {
+    return Intl.message(
+      'View All',
+      name: 'viewAll',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accept`
+  String get accept {
+    return Intl.message(
+      'Accept',
+      name: 'accept',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send a message`
+  String get sendMsg {
+    return Intl.message(
+      'Send a message',
+      name: 'sendMsg',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Comments`
+  String get comments {
+    return Intl.message(
+      'Comments',
+      name: 'comments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `commented on your post`
+  String get commentedOnYourPost {
+    return Intl.message(
+      'commented on your post',
+      name: 'commentedOnYourPost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `replied to your comment`
+  String get repliedToYourComment {
+    return Intl.message(
+      'replied to your comment',
+      name: 'repliedToYourComment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `liked your post`
+  String get likedYourPost {
+    return Intl.message(
+      'liked your post',
+      name: 'likedYourPost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `liked your comment`
+  String get sharedYourPost {
+    return Intl.message(
+      'Shared your post',
+      name: 'sharedYourPost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Messages`
+  String get messages {
+    return Intl.message(
+      'Messages',
+      name: 'messages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `open in chat`
+  String get openInChat {
+    return Intl.message(
+      'open in chat',
+      name: 'openInChat',
       desc: '',
       args: [],
     );

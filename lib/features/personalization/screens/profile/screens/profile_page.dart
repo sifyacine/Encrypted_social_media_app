@@ -8,6 +8,7 @@ import '../../../../../common/widgets/appbar/appbar.dart';
 import '../../../../../generated/l10n.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
+import '../../../../authentication/controllers/local/local_controller.dart';
 import '../../settings/settings_page.dart';
 import 'edit_profile/edit_profile.dart';
 import 'friends/friends_page.dart';
@@ -18,12 +19,15 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = THelperFunctions.isDarkMode(context);
+    final LocaleController localeController = Get.find();
+    final isDark = localeController.useSystemMode.value
+        ? THelperFunctions.isDarkMode(context) // Use system theme if enabled
+        : localeController.isDarkMode.value; // Use manual theme otherwise
     return Scaffold(
       appBar: TAppBar(actions: [
         IconButton(
           onPressed: () {
-            Get.to(() => const SettingsScreen());
+            Get.to(() => SettingsScreen());
           },
           icon: const Icon(Iconsax.setting),
         ),

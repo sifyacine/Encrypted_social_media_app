@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/authentication/controllers/local/local_controller.dart';
+import 'features/main/notification/notification_page.dart';
 import 'features/personalization/screens/profile/screens/profile_page.dart';
 
 
@@ -14,7 +16,10 @@ class NavigationMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = THelperFunctions.isDarkMode(context);
+    final LocaleController localeController = Get.find();
+    final isDark = localeController.useSystemMode.value
+        ? THelperFunctions.isDarkMode(context) // Use system theme if enabled
+        : localeController.isDarkMode.value; // Use manual theme otherwise
     final controller = Get.put(NavigationController());
     return Scaffold(
       bottomNavigationBar: Obx(
@@ -41,7 +46,7 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [Container(), Container(), Container(), Container(), const ProfileScreen()];
+  final screens = [Container(), Container(), Container(), const NotificationScreen(), const ProfileScreen()];
 
 }
 

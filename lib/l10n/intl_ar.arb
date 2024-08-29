@@ -22,39 +22,57 @@
     "confirmationCodeSubTitle": "تم إرسال رمز مكون من 4 أرقام إلى",
     "resend": "إعادة الإرسال",
     "confirm": "تأكيد",
-  
+
     "tabFriends": "الأصدقاء",
     "tabEditProfile": "تعديل الملف الشخصي",
     "tabMessages": "الرسائل",
-  
+
     "search": "ابحث في قائمة أصدقائك",
     "searchBar": "ابحث @userName",
     "noFriends": "ليس لديك أصدقاء",
-  
+
     "editUsername": "تعديل اسم المستخدم",
     "profilePicture": "الصورة الشخصية",
     "editPassword": "تعديل كلمة المرور",
-  
+
     "otherAdditions": "إضافات أخرى",
     "CurrentSituation": "الوضع الحالي",
     "more": "المزيد",
-  
+
     "ipCheck": "تحقق من عنوان IP",
-    "twoFA": "المصادقة الثنائية",
     "autoDeleteMsgs": "حذف الرسائل تلقائياً",
-  
+    "twoFactor": "المصادقة الثنائية",
+
     "freeMode": "وضع مجاني",
     "vipMode": "وضع VIP",
-  
+
     "regularFeatures": "الميزات العادية",
     "encryptedAllData": "تشفير جميع البيانات",
     "free": "مجاني",
-  
+
     "moreFeatures": "المزيد من الميزات",
     "fastResponse": "استجابة سريعة",
     "vipPrice": "تبدأ من 30$",
-  
+
     "vipButton": "احصل عليه الآن",
-    "freeButton": "مفعل"
+    "freeButton": "مفعل",
+
+    "notification" : "إشعار",
+    "FriendRequest" : "طلب صداقة",
+    "all" : "الكل",
+    "read" : "مقروء",
+    "newNotification" : "جديد",
+    "delete" : "حذف",
+    "viewAll" : "عرض الكل",
+    "accept" : "قبول",
+    "sendMsg" : "إرسال رسالة",
+    "comments" : "تعليقات",
+
+    "commentedOnYourPost": "علق على منشورك",
+    "likedYourPost": "أعجب بمنشورك",
+    "repliedToYourComment": "رد على تعليقك",
+    "sharedYourPost": "شارك منشورك",
+
+    "messages" : "رسائل",
+    "openInChat" : "فتح في الدردشة"
 }
-  

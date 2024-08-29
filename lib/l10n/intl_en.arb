@@ -42,7 +42,7 @@
   "more" : "More",
 
   "ipCheck" : "check your IP address",
-  "twoFA" : "Two factor authentication",
+  "twoFactor" : "Two factor authentication",
   "autoDeleteMsgs" : "Auto delete messages",
 
   "freeMode" : "Free mode",
@@ -57,5 +57,25 @@
   "vipPrice" : "Starting at 30$",
 
   "vipButton" : "Get it now",
-  "freeButton" : "ON"
+  "freeButton" : "ON",
+
+  "notification" : "Notification",
+  "FriendRequest" : "Friend Request",
+  "all" : "All",
+  "read" : "Read",
+  "newNotification" : "New",
+  "delete" : "Delete",
+  "viewAll" : "View All",
+  "accept" : "Accept",
+  "sendMsg" : "Send a message",
+  "comments" : "Comments",
+
+  "commentedOnYourPost": "commented on your post",
+  "likedYourPost": "liked your post",
+  "repliedToYourComment": "replied to your comment",
+  "sharedYourPost": "shared your post",
+
+
+  "messages" : "messages",
+  "openInChat" : "open in chat"
 }

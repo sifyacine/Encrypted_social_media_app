@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../../features/authentication/controllers/local/local_controller.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
@@ -26,13 +28,17 @@ class TCircularImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final LocaleController localeController = Get.find();
+    final isDark = localeController.useSystemMode.value
+        ? THelperFunctions.isDarkMode(context) // Use system theme if enabled
+        : localeController.isDarkMode.value; // Use manual theme otherwise
     return Container(
       height: height,
       width: width,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         color: backgroundColor ??
-            (THelperFunctions.isDarkMode(context) ? TColors.kBlack : TColors.white),
+            (isDark ? TColors.kBlack : TColors.white),
         shape: BoxShape.circle,
       ),
       child: ClipOval(

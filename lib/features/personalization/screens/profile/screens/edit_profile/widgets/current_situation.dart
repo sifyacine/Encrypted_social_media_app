@@ -1,16 +1,21 @@
 import 'package:encrypted_social_media_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
 import '../../../../../../../generated/l10n.dart';
 import '../../../../../../../utils/constants/colors.dart';
+import '../../../../../../authentication/controllers/local/local_controller.dart';
 
 class CurrentSituation extends StatelessWidget {
   const CurrentSituation({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final isDark = THelperFunctions.isDarkMode(context);
+    final LocaleController localeController = Get.find();
+    final isDark = localeController.useSystemMode.value
+        ? THelperFunctions.isDarkMode(context) // Use system theme if enabled
+        : localeController.isDarkMode.value; // Use manual theme otherwise
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Space the containers evenly
       children: [

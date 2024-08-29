@@ -1,16 +1,21 @@
 import 'package:encrypted_social_media_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
 import '../../../../../../../generated/l10n.dart';
 import '../../../../../../../utils/constants/colors.dart';
+import '../../../../../../authentication/controllers/local/local_controller.dart';
 
 class OtherAdditions extends StatelessWidget {
   const OtherAdditions({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final isDark = THelperFunctions.isDarkMode(context);
+    final LocaleController localeController = Get.find();
+    final isDark = localeController.useSystemMode.value
+        ? THelperFunctions.isDarkMode(context) // Use system theme if enabled
+        : localeController.isDarkMode.value; // Use manual theme otherwise
     return Wrap(
       alignment: WrapAlignment.center, // Aligns children to the center
       spacing: 12.0, // Space between containers horizontally
@@ -59,7 +64,7 @@ class OtherAdditions extends StatelessWidget {
               Icon(Icons.person, size: 50, color: isDark? TColors.white : TColors.kBlack),
               const SizedBox(height: 8),
               Text(
-                S.of(context).twoFA,
+                S.of(context).twoFactor,
                 style: const TextStyle(fontSize: 14),
                 textAlign: TextAlign.center,
                 maxLines: 2,
